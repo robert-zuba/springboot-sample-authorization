@@ -50,6 +50,15 @@ public class User implements UserDetails {
         return List.of(authority);
     }
 
+    public User(String fullName, String email, String password) {
+        this.fullName = fullName;
+        this.email = email;
+        this.password = password;
+    }
+
+    public User() {
+    }
+
     public String getPassword() {
         return password;
     }
